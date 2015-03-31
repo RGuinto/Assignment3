@@ -1,0 +1,102 @@
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+.app{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.todo-wrapper{
+	width: 100%;
+	height: auto;
+}
+
+h1{
+	font-weight: 500;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.add-input{
+	color: #cacaca;
+	padding: 0.5em;
+	border: 1px solid #cacaca;
+	outline: 0;
+}
+
+button{
+	color: #fff;
+	background: #000;
+	border: 1px solid #000;
+	padding: 0.5em 2em;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: 0;
+}
+
+button:hover, button:active{
+	color: #000;
+	background: #fff;
+	transition: color 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
+}
+
+li{
+	background: #b0e0e6;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+/*@media (min-width: 400px){
+	.main{
+		margin: 0;
+		width: 100%;
+	}
+}*/
+
+.meat {color: brown;}
+.fruits {background: black; color: purple; font-weight: bold;}
+.veggies {color: darkgreen;}
+.random {color: green; background: lightyellow;}
+.clothing {color: red;}
+
+ #trash-can { 
+ 	float: left; 
+ 	width: 150px; 
+ 	min-height: 50px; 
+ 	padding: 0.5em; 
+ 	margin: 8px 10px 8px 20px; 
+ 	cursor: hand; 
+ 	cursor: pointer; 
+ 	border: 1px dotted red; 
+ }
+
+ #droppable { 
+ 	width: 150px; 
+ 	height: 150px; 
+ 	padding: 0.5em; 
+ 	float: left; 
+ 	margin: 10px; 
+ }
+
+   #trash { background-color: green; float: right; width: 32%; min-height: 18em; padding: 1%; }
+   

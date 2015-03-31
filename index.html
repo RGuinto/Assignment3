@@ -1,0 +1,49 @@
+<!-- Grocery List from http://codepen.io/Russbrown/pen/IgBuh-->
+<!doctype html>
+
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+    <script src="//use.edgefonts.net/vast-shadow:n4:all.js"></script>
+    <script src="//use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
+    <script src='js/script.js'></script>
+    <script src='jquery-ui-1.10.4.custom/js/jquery-1.10.2.js'></script>
+    <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+<!--     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="main">
+        <div class="todo-wrapper" ng-controller="TodoCtrl">
+          <h1>Grocery List</h1>
+
+          <form>
+            <input class="add-input" placeholder="Add an item" type="text" ng-model="formTodoText" ng-model-instant />
+            <button class="add-btn" ng-click="addTodo()">Add</button>
+          </form>
+
+          <h2><span class="emphasis">{{getTotalTodos()}}</span> items to buy</h2>
+          <ul id="sortable" class="gallery ui-helper-reset ui-helper-clearfix">
+            <li id="draggable" ng-repeat="todo in todos" ng-class="todo.classes">
+              <input type="checkbox" ng-model="todo.done"/>
+              <!--Using ng-class to add the .fruits class whenever the Fruits() method return true-->
+              <span ng-class="{'fruits': Fruits(todo.text)}" class="done-{{todo.done}}">{{todo.text}}</span>
+            </li>
+          </ul>
+          
+          <button class="clear-btn" ng-click="clearCompleted()">Completed</button>
+          <div id="trash" class="ui-widget-header">
+			  <p>Trash Can</p>
+		  </div>
+        </div>
+      </div
+    </div>
+
+    <script src="prefixfree-gh-pages/prefixfree.min.js" type="application/javascript"></script>
+  </body>
+  
+</html>
