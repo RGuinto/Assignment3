@@ -43,13 +43,47 @@ var fruits = {
         });
     };
 
+    function Meat(item){
+      var food = ["Chicken", "Pork", "Beef", "Lamb", "Steak", "Bacon", "Ham", "Sausage", "Crab", "minced pork", "minced beef", "turkey"];
+      var len = food.length;
+      for (var i=0;i<len;i++){
+          food.push(food[i].toLowerCase());
+          // $scope.todos.push({text:food[i], done:false});
+      }
+      if (food.indexOf(item) != -1){
+        return true;
+      }
+    }
+
+    function Veggies(item){
+      var food = ["Cauliflower", "broccolo", "peas", "spinach", "carrots", "potato", "tomato", "corn", "Bok Choy", "celery"];
+      var len = food.length;
+      for (var i=0;i<len;i++){
+          food.push(food[i].toLowerCase());
+          // $scope.todos.push({text:food[i], done:false});
+      }
+      if (food.indexOf(item) != -1){
+        return true;
+      }
+    }
+
+    function Clothing(item){
+      var food = ["T-shirt", "blouse", "jeans", "pants", "socks", "cardigan", "jacket", "blazer", "dress pants", "dress", "tank tops", "dress shirt", "pea coat", "coat"];
+      var len = food.length;
+      for (var i=0;i<len;i++){
+          food.push(food[i].toLowerCase());
+          // $scope.todos.push({text:food[i], done:false});
+      }
+      if (food.indexOf(item) != -1){
+        return true;
+      }
+    }
+
+
     /* COLOR CODING PART */
     /*Fruits method*/
     function Fruits(item){
       var food = ["BANANA", "APPLE", "ORANGE", "PINEAPPLE", "GRAPES", "PEAR", "COCONUT", "mango"];
-      var meat = ["Chicken", "Pork", "Beef", "Lamb", "Steak", "Bacon", "Ham", "Sausage", "Crab", "minced pork", "minced beef", "turkey"];
-      var veggies = ["Cauliflower", "broccolo", "peas", "spinach", "carrots", "potato", "tomato", "corn", "Bok Choy", "celery"];
-      var clothing = ["T-shirt", "blouse", "jeans", "pants", "socks", "cardigan", "jacket", "blazer", "dress pants", "dress", "tank tops", "dress shirt", "pea coat", "coat"];
       var len = food.length;
       for (var i=0;i<len;i++){
           food.push(food[i].toLowerCase());
