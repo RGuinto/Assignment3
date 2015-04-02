@@ -46,7 +46,10 @@ var fruits = {
     /* COLOR CODING PART */
     /*Fruits method*/
     function Fruits(item){
-      var food = ["BANANA", "APPLE", "ORANGE", "PINEAPPLE", "GRAPES", "PEAR", "COCONUT"];
+      var food = ["BANANA", "APPLE", "ORANGE", "PINEAPPLE", "GRAPES", "PEAR", "COCONUT", "mango"];
+      var meat = ["Chicken", "Pork", "Beef", "Lamb", "Steak", "Bacon", "Ham", "Sausage", "Crab", "minced pork", "minced beef", "turkey"];
+      var veggies = ["Cauliflower", "broccolo", "peas", "spinach", "carrots", "potato", "tomato", "corn", "Bok Choy", "celery"];
+      var clothing = ["T-shirt", "blouse", "jeans", "pants", "socks", "cardigan", "jacket", "blazer", "dress pants", "dress", "tank tops", "dress shirt", "pea coat", "coat"];
       var len = food.length;
       for (var i=0;i<len;i++){
           food.push(food[i].toLowerCase());
