@@ -56,6 +56,27 @@ var meat = {
     {text:'BACON', done:false, classes:['meat']}
 
   ];
+
+
+var veggies = {
+  corn: true,
+  potato: true
+};
+
+  $scope.veggies = [
+    {text:'CORN', done:false, classes:['veggies']},
+    {text:'POTATO', done:false, classes:['veggies']}
+
+  ];
+
+
+
+
+
+
+
+
+
  
   $scope.getTotalTodos = function () {
     return $scope.todos.length;
@@ -75,6 +96,13 @@ var meat = {
   if (meat[element.text.toLowerCase()]){
       element.classes.push('meat');
    }
+
+  if (veggies[element.text.toLowerCase()]){
+      element.classes.push('veggies');
+   }
+
+
+
 
 
   };
