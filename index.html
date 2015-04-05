@@ -31,6 +31,7 @@
                 <input type="checkbox" ng-model="todo.done"/>
                 <!--Using ng-class to add the .fruits class whenever the Fruits() method return true-->
                 <span ng-class="{'fruits': Fruits(todo.text)}" class="done-{{todo.done}}">{{todo.text}}</span>
+                <span ng-class="{'meat': Meat(todo.text)}" class="done-{{todo.done}}"></span>
               </li>
             </ul>
           </div>

@@ -9,17 +9,41 @@ function TodoCtrl($scope) {
 var fruits = {
   banana: true,
   apple: true,
-  coconut: true
+  coconut: true,
+  orange: true,
+  strawberry: true,
+  pineapple: true,
+  kiwi: true,
+  watermelon: true,
+  mango: true
 };
 
   $scope.fruits = [
     {text:'BANANA', done:false, classes:['fruits']},
     {text:'APPLE', done:false, classes:['fruits']},
-    {text: 'COCONUT', done: false, classes:['fruits']}
+    {text: 'COCONUT', done: false, classes:['fruits']},
+    {text: 'ORANGE', done: false, classes:['fruits']},
+    {text: 'STRAWBERRY', done: false, classes:['fruits']},
+    {text: 'PINEAPPLE', done: false, classes:['fruits']},
+    {text: 'KIWI', done: false, classes:['fruits']},
+    {text: 'WATERMELON', done: false, classes:['fruits']},
+    {text: 'MANGO', done: false, classes:['fruits']}
 
   ];
 
-  
+
+var meat = {
+  chicken: true,
+  pork: true
+};
+
+  $scope.meat = [
+    {text:'CHICKEN', done:false, classes:['meat']},
+    {text:'PORK', done:false, classes:['meat']}
+
+
+  ];
+ 
   $scope.getTotalTodos = function () {
     return $scope.todos.length;
   };
@@ -33,7 +57,12 @@ var fruits = {
    }
    $scope.todos.push(element);
    $scope.formTodoText;
-    
+
+
+  if (meat[element.text.toLowerCase()]){
+      element.classes.push('meat');
+   }
+
 
   };
 
