@@ -43,7 +43,8 @@ var meat = {
   turkey: true,
   lamb: true,
   duck: true,
-  bacon: true
+  bacon: true,
+  ham: true
 };
 
   $scope.meat = [
@@ -53,28 +54,39 @@ var meat = {
     {text:'TURKEY', done:false, classes:['meat']},
     {text:'LAMB', done:false, classes:['meat']},
     {text:'DUCK', done:false, classes:['meat']},
-    {text:'BACON', done:false, classes:['meat']}
+    {text:'BACON', done:false, classes:['meat']},
+    {text:'HAM', done:false, classes:['meat']}
 
   ];
 
 
 var veggies = {
   corn: true,
-  potato: true
+  potato: true,
+  spinach: true
 };
 
   $scope.veggies = [
     {text:'CORN', done:false, classes:['veggies']},
-    {text:'POTATO', done:false, classes:['veggies']}
+    {text:'POTATO', done:false, classes:['veggies']},
+    {text:'SPINACH', done:false, classes:['veggies']}
 
   ];
 
 
 
+var clothing = {
+  jeans: true,
+  dress: true,
+  socks: true
+};
 
+  $scope.clothing = [
+    {text:'JEANS', done:false, classes:['clothing']},
+    {text:'DRESS', done:false, classes:['clothing']},
+    {text:'SOCKS', done:false, classes:['clothing']}
 
-
-
+  ];
 
 
  
@@ -101,8 +113,9 @@ var veggies = {
       element.classes.push('veggies');
    }
 
-
-
+ if (clothing[element.text.toLowerCase()]){
+      element.classes.push('clothing');
+   }
 
 
   };
