@@ -15,7 +15,9 @@ var fruits = {
   pineapple: true,
   kiwi: true,
   watermelon: true,
-  mango: true
+  mango: true,
+  grapes: true,
+  lemon: true
 };
 
   $scope.fruits = [
@@ -27,20 +29,31 @@ var fruits = {
     {text: 'PINEAPPLE', done: false, classes:['fruits']},
     {text: 'KIWI', done: false, classes:['fruits']},
     {text: 'WATERMELON', done: false, classes:['fruits']},
-    {text: 'MANGO', done: false, classes:['fruits']}
+    {text: 'MANGO', done: false, classes:['fruits']},
+    {text: 'GRAPES', done: false, classes:['fruits']},
+    {text: 'LEMON', done: false, classes:['fruits']}
 
   ];
 
 
 var meat = {
   chicken: true,
-  pork: true
+  pork: true,
+  beef: true,
+  turkey: true,
+  lamb: true,
+  duck: true,
+  bacon: true
 };
 
   $scope.meat = [
     {text:'CHICKEN', done:false, classes:['meat']},
-    {text:'PORK', done:false, classes:['meat']}
-
+    {text:'PORK', done:false, classes:['meat']},
+    {text:'BEEF', done:false, classes:['meat']},
+    {text:'TURKEY', done:false, classes:['meat']},
+    {text:'LAMB', done:false, classes:['meat']},
+    {text:'DUCK', done:false, classes:['meat']},
+    {text:'BACON', done:false, classes:['meat']}
 
   ];
  
