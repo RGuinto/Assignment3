@@ -44,7 +44,11 @@ var meat = {
   lamb: true,
   duck: true,
   bacon: true,
-  ham: true
+  ham: true,
+  steak: true,
+  sausage: true,
+  crab: true
+
 };
 
   $scope.meat = [
@@ -55,7 +59,10 @@ var meat = {
     {text:'LAMB', done:false, classes:['meat']},
     {text:'DUCK', done:false, classes:['meat']},
     {text:'BACON', done:false, classes:['meat']},
-    {text:'HAM', done:false, classes:['meat']}
+    {text:'HAM', done:false, classes:['meat']},
+    {text:'STEAK', done:false, classes:['meat']},
+    {text:'SAUSAGE', done:false, classes:['meat']},
+    {text:'CRAB', done:false, classes:['meat']}
 
   ];
 
@@ -63,31 +70,78 @@ var meat = {
 var veggies = {
   corn: true,
   potato: true,
-  spinach: true
+  spinach: true,
+  cauliflower: true,
+  broccoli: true,
+  peas: true,
+  carrots: true, 
+  tomato: true,
+  celery: true, 
+  cucumber: true,
+  pepper: true,
+  cabbage: true,
+  radish: true, 
+  lettuce: true, 
+  beans: true,
+  eggplant: true,
+  onion: true,
+  garlic: true,
+  leek: true,
+  yam: true
 };
 
   $scope.veggies = [
     {text:'CORN', done:false, classes:['veggies']},
     {text:'POTATO', done:false, classes:['veggies']},
-    {text:'SPINACH', done:false, classes:['veggies']}
+    {text:'SPINACH', done:false, classes:['veggies']},
+    {text:'CAULIFLOWER', done:false, classes:['veggies']},
+    {text:'BROCCOLI', done:false, classes:['veggies']},
+    {text:'PEAS', done:false, classes:['veggies']},
+    {text:'CARROTS', done:false, classes:['veggies']},
+    {text:'TOMATO', done:false, classes:['veggies']},
+    {text:'CELERY', done:false, classes:['veggies']},
+    {text:'CUCUMBER', done:false, classes:['veggies']},
+    {text:'PEPPER', done:false, classes:['veggies']},
+    {text:'CABBAGE', done:false, classes:['veggies']},
+    {text:'RADISH', done:false, classes:['veggies']},
+    {text:'LETTUCE', done:false, classes:['veggies']},
+    {text:'BEANS', done:false, classes:['veggies']},
+    {text:'EGGPLANT', done:false, classes:['veggies']},
+    {text:'ONION', done:false, classes:['veggies']},
+    {text:'GARLIC', done:false, classes:['veggies']},
+    {text:'LEEK', done:false, classes:['veggies']},
+    {text:'YAM', done:false, classes:['veggies']}
 
   ];
-
-
 
 var clothing = {
   jeans: true,
   dress: true,
-  socks: true
+  socks: true,
+  blouse: true,
+  pants: true,
+  jacket: true,
+  coat: true,
+  dresspants: true,
+  tanktops: true,
+  hat: true,
+  tie: true
 };
 
   $scope.clothing = [
     {text:'JEANS', done:false, classes:['clothing']},
     {text:'DRESS', done:false, classes:['clothing']},
-    {text:'SOCKS', done:false, classes:['clothing']}
+    {text:'SOCKS', done:false, classes:['clothing']},
+    {text:'BLOUSE', done:false, classes:['clothing']},
+    {text:'PANTS', done:false, classes:['clothing']},
+    {text:'JACKET', done:false, classes:['clothing']},
+    {text:'COAT', done:false, classes:['clothing']},
+    {text:'DRESSPANTS', done:false, classes:['clothing']},
+    {text:'TANKTOPS', done:false, classes:['clothing']},
+    {text:'HAT', done:false, classes:['clothing']},
+    {text:'TIE', done:false, classes:['clothing']}
 
   ];
-
 
  
   $scope.getTotalTodos = function () {
