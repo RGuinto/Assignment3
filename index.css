@@ -92,8 +92,6 @@ button:hover, button:active{
 }
 
 button:active{
-	
-
 	-webkit-animation-name: pulse;
     animation-name: pulse;
     -webkit-animation-iteration-count: infinite;
@@ -131,6 +129,12 @@ li{
 	height: auto;
 	float: right;
 	vertical-align: middle;
+	cursor: pointer;
+
+
+	-webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-iteration-count: infinite;
 }
 
 .meat {background: #FF6666; color: #000; font-weight: 500;}
