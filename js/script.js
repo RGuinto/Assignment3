@@ -248,6 +248,7 @@ var clothing = {
       activeClass: "ui-state-highlight",
       drop: function( event, ui ) {
         deleteList( ui.draggable );
+        clearCompleted();
       }
     });
 
@@ -259,9 +260,7 @@ var clothing = {
           $( "<ul class='gallery ui-helper-reset'/>" ).appendTo( $trash );
  
         $item.find( "draggable" ).remove();
-        $scope.todos = $scope.todos.filter(function(todo){
-            return !todo.done;
-        });
+        clearCompleted();
       });
     }
     $( "ul, li" ).disableSelection();

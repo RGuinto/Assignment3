@@ -1,5 +1,6 @@
 html{
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 body{
@@ -25,6 +26,7 @@ body{
 	width: 100%;
 	height: auto;
 	margin-top: 5em;
+	margin-bottom: 5em;
 }
 
 .todo-wrapper{
@@ -87,6 +89,14 @@ button:hover, button:active{
 	background: #fff;
 	transition: color 0.5s ease-in-out;
 	transition: background 0.5s ease-in-out;
+}
+
+button:active{
+	
+
+	-webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
 }
 
 li{
@@ -200,4 +210,8 @@ li{
 		transition: color 0.5s ease-in-out;
 		transition: background 0.5s ease-in-out;
 	}
+}
+
+.ripple{
+  overflow:hidden;
 }
