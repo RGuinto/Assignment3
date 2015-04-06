@@ -240,7 +240,7 @@ var clothing = {
     $( "#draggable" ).draggable({
       connectToSortable: "#sortable",
       helper: "clone",
-      revert: "invalid"
+      revert: "invalid",
     });
     // let the trash be droppable, accepting the gallery items
     $trash.droppable({
@@ -259,9 +259,16 @@ var clothing = {
           $( "<ul class='gallery ui-helper-reset'/>" ).appendTo( $trash );
  
         $item.find( "draggable" ).remove();
+        $scope.todos = $scope.todos.filter(function(todo){
+            return !todo.done;
+        });
       });
     }
     $( "ul, li" ).disableSelection();
+
+    $(document).on('scroll', function() {
+      $(document).scrollLeft(0);
+    });
 
 }
 

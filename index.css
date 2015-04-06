@@ -1,3 +1,7 @@
+html{
+	overflow: hidden;
+}
+
 body{
 	font-family: 'Lato', sans-serif;
 	margin: 0;
@@ -87,7 +91,7 @@ button:hover, button:active{
 
 li{
 	background: #b0e0e6;
-	margin: 1em 0;
+	margin: 0.2em 0;
 	padding: 1em;
 }
 
@@ -106,14 +110,14 @@ li{
 }
 
 #trash{
-	width: 10%;
+	width: 50%;
 	height: auto;
 	float: right;
 	margin-right: 1.5em;
 }
 
 #trash img{
-	width: 20%;
+	width: 4%;
 	height: auto;
 	float: right;
 	vertical-align: middle;
@@ -159,7 +163,7 @@ li{
 	}
 
 	#trash{
-		width: 7%;
+		width: 50%;
 		height: auto;
 		float: right;
 		padding-right: 1.5em;
@@ -167,7 +171,7 @@ li{
 	}
 
 	#trash img{
-		width: 100%;
+		width: 14%;
 		height: auto;
 	}
 
