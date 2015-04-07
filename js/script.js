@@ -143,10 +143,12 @@ var clothing = {
 
   ];
 
- 
   $scope.getTotalTodos = function () {
-    return $scope.todos.length;
+    // return $scope.todos.length;
+    var currentCount = $(".gallery #draggable:not(.dropped)").length;
+    return currentCount;
   };
+
   
   
   $scope.addTodo = function () {
@@ -259,10 +261,12 @@ var clothing = {
           $( "<ul class='gallery ui-helper-reset'/>" ).appendTo( $trash );
  
         $item.find( "draggable" ).remove();
+        $($item).addClass('dropped');
+        var currentCount = $(".gallery #draggable:not(.dropped)").length;
+        console.log(currentCount);
       });
     }
     $( "ul, li" ).disableSelection();
-
 }
 
 
