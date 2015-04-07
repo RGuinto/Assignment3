@@ -158,6 +158,10 @@ li{
  	margin: 10px; 
  }
 
+ .done-true{
+ 	text-decoration: line-through;
+ }
+
 /*#trash {
 	background-color: green;
 	float: right;
